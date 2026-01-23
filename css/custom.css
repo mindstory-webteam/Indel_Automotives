@@ -212,12 +212,13 @@ a:focus{
     padding-left: 0px;
 }
 
-.header-btn .btn-default{
-	color: #fff;
+.header-btn .btn-default,
+.about-us-btn .btn-default,
+.cta-box-btn .btn-default,
+.why-choose-btn .btn-default {
+  color: #fff;
 }
-.about-us-btn .btn-default{
-	color: #fff;
-}
+
 .btn-default{
 	position: relative;
 	display: inline-block;
@@ -1726,7 +1727,8 @@ filter: brightness(1) invert(1);
 }
 
 .why-choose-body-item-list{
-	width: calc(68% - 15px);
+	width: 100%;
+	/* width: calc(68% - 15px); */
 }
 
 .why-choose-body-item{
@@ -5164,11 +5166,13 @@ filter: brightness(1) invert(1);
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
+	flex-direction: column;
 }
 
 .contact-info-item{
 	position: relative;
-	width: calc(33.33% - 20px);
+	width: 100%;
+	/* width: calc(33.33% - 20px); */
 	background-color: var(--secondary-color);
 	border-radius: 10px;
 	padding: 40px;
@@ -5255,10 +5259,12 @@ filter: brightness(1) invert(1);
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px 60px;
+	justify-content: center;
 }
 
-.google-map-iframe{
-	width: calc(50% - 30px);
+.google-map-iframe,
+.cs-nt-new{
+	width: calc(40% - 30px);
 }
 
 .google-map-iframe iframe{
@@ -5268,7 +5274,7 @@ filter: brightness(1) invert(1);
 }
 
 .contact-us-form{
-	width: calc(50% - 30px);
+	width: calc(60% - 30px);
 	background-color: var(--secondary-color);
 	border-radius: 10px;
 	padding: 60px;
