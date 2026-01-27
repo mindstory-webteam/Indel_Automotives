@@ -1619,13 +1619,13 @@ filter: brightness(1) invert(1);
 .our-value-item {
   display: flex;
   align-items: stretch;
-  gap: 30px;
+  gap: 20px;
 }
 
 /* Image box */
 .our-value-item .course-item-image-box {
-  flex: 0 0 35%;
-  max-width: 35%;
+  flex: 0 0 30%;
+  max-width: 30%;
 }
 
 /* Image */
@@ -1637,8 +1637,8 @@ filter: brightness(1) invert(1);
 
 /* Content box */
 .our-value-item .course-item-header {
-  flex: 0 0 60%;
-  max-width: 60%;
+  /* flex: 0 0 60%; */
+  max-width: 100%;
   display: flex;
   align-items: flex-start;
 }
