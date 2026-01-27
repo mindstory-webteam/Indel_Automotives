@@ -2896,10 +2896,10 @@ filter: brightness(1) invert(1);
 
 .cta-box{
     position: relative;
-    background-image: url('../images/cta-box-bg-image.jpg');
+    /* background-image: url('../images/cta-box-bg-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center center; */
     padding: 100px 0;
     overflow: hidden;
 }
