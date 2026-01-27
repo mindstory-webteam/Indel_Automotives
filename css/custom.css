@@ -408,7 +408,7 @@ a:focus{
 }
 
 .section-row{
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 
 .section-row .section-title{
@@ -724,7 +724,7 @@ header.main-header .header-sticky.active{
 	position: absolute;
     width: 100%;
 	padding: 0;
-	background: var(--accent-color);
+	background: var(--white-color);
 }
 
 .slicknav_menu ul{
@@ -1553,6 +1553,17 @@ filter: brightness(1) invert(1);
 	margin-bottom: 30px;
 	padding: 10px;
 }
+.our-value-item{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 10px;
+	background-color: var(--secondary-color);
+	border-radius: 10px;
+	height: calc(100% - 30px);
+	margin-bottom: 30px;
+	padding: 10px;
+}
 
 .course-item-header{
 	padding: 30px;
@@ -1593,6 +1604,67 @@ filter: brightness(1) invert(1);
 	object-fit: cover;
 	border-radius: 10px;
 	transition: all 0.6s ease-in-out;
+}
+.our-value-item .course-item-image img{
+	width: 100%;
+	aspect-ratio: 1 ;
+	object-fit: cover;
+	border-radius: 10px;
+	transition: all 0.6s ease-in-out;
+}
+/* =========================
+   OUR VALUES – CUSTOM LAYOUT
+   ========================= */
+
+.our-value-item {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+}
+
+/* Image box */
+.our-value-item .course-item-image-box {
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+
+/* Image */
+.our-value-item .course-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content box */
+.our-value-item .course-item-header {
+  flex: 0 0 60%;
+  max-width: 60%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.our-value-item .course-item-header h2{
+ text-align: left;
+}
+/* Content spacing */
+.our-value-item .course-item-content {
+  padding: 10px 0;
+}
+
+/* =========================
+   MOBILE & TABLET
+   ========================= */
+
+@media (max-width: 991px) {
+  .our-value-item {
+    flex-direction: column;
+  }
+
+  .our-value-item .course-item-image-box,
+  .our-value-item .course-item-header {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
 }
 
 .course-item:hover .course-item-image img{
@@ -3379,6 +3451,9 @@ filter: brightness(1) invert(1);
 }
 .life-at-indel-star-section{
 	padding-bottom: 0 !important;
+}
+.about-us-start-section{
+	padding-top: 0;
 }
 
 .life-at-item{
@@ -6100,7 +6175,7 @@ filter: brightness(1) invert(1);
 	}
 
 	.section-row{
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 	
 	.section-title{
