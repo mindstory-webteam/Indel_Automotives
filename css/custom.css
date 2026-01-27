@@ -3293,7 +3293,17 @@ filter: brightness(1) invert(1);
 /***    17. About Us Page css     ***/
 /************************************/
 
-.page-header{
+.page-header-about-us.page-header{
+	position: relative;
+	background-image: url('../images/abou.avif');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 280px 0 170px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.page-header-contact-us.page-header{
 	position: relative;
 	background-image: url('../images/page-header-bg.jpg');
 	background-position: center center;
@@ -3314,7 +3324,8 @@ filter: brightness(1) invert(1);
 	height: 100%;
 	width: 100%;
 	background-color: var(--primary-color);
-	opacity: 80%;
+	opacity: .6;
+	/* opacity: 80%; */
 	z-index: 1;
 }
 
