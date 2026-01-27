@@ -3313,6 +3313,16 @@ filter: brightness(1) invert(1);
 	margin-top: 20px;
 	overflow: hidden;
 }
+.page-header{
+	position: relative;
+	background-image: url('../images/page-header-bg.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 280px 0 170px;
+	margin-top: 20px;
+	overflow: hidden;
+}
 
 .page-header:before{
 	content: '';
