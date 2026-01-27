@@ -227,7 +227,7 @@ a:focus{
 	line-height: 1em;
 	text-transform: capitalize;
 	background: var(--accent-color);
-	color: var(--primary-color);
+	color: var(--white-color);
 	border-radius: 100px;
 	padding: 17px 55px 17px 20px;
 	border: none;
@@ -315,7 +315,7 @@ a:focus{
     right: 0px;
     height: 24px;
     width: 24px;
-    background-color: var(--accent-color);
+    background-color: var(--white-color);
     border-radius: 100px;
     background-image: url('../images/arrow-primary.svg');
     background-repeat: no-repeat;
@@ -618,7 +618,7 @@ header.main-header .header-sticky.active{
 	position: absolute;
 	left: 0;
 	top: 100%;
-	background: var(--accent-color);
+	background: var(--white-color);
 	transition: all 0.3s ease-in-out;
 	text-align: left;
 }
@@ -658,7 +658,7 @@ header.main-header .header-sticky.active{
 
 .main-menu ul ul li a:hover,
 .main-menu ul ul li a:focus{
-	color: var(--white-color);
+	color: var(--accent-color);
 	background-color: transparent;
 	padding: 6px 20px 6px 23px !important;
 }
@@ -880,7 +880,7 @@ header.main-header .header-sticky.active{
 .satisfy-client-image.add-more{
 	width: 46px;
 	height: 46px;
-	background-color: var(--accent-color);
+	background-color: var(--primary-color);
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
@@ -1749,7 +1749,7 @@ filter: brightness(1) invert(1);
 	position: relative;
     width: 50px;
     height: 50px;
-    background: var(--accent-color);
+    background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1763,7 +1763,7 @@ filter: brightness(1) invert(1);
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background: var(--primary-color);
+	background: var(--accent-color);
 	border-radius: 50%;
 	width: 100%;
 	height: 100%;
@@ -1781,6 +1781,7 @@ filter: brightness(1) invert(1);
 	max-width: 24px;
 	z-index: 1;
 	transition: all 0.4s ease-in-out;
+	filter: brightness(1) invert(1);
 }
 
 .why-choose-body-item:hover .icon-box img{
@@ -1878,7 +1879,7 @@ filter: brightness(1) invert(1);
 	position: relative;
     width: 50px;
     height: 50px;
-    background: var(--accent-color);
+    background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1892,7 +1893,7 @@ filter: brightness(1) invert(1);
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background: var(--primary-color);
+	background: var(--accent-color);
 	border-radius: 50%;
 	width: 100%;
 	height: 100%;
@@ -1910,6 +1911,7 @@ filter: brightness(1) invert(1);
 	max-width: 24px;
 	z-index: 1;
 	transition: all 0.4s ease-in-out;
+	filter: brightness(1) invert(1);
 }
 
 .why-choose-contact-box:hover .icon-box img{
@@ -2538,14 +2540,14 @@ filter: brightness(1) invert(1);
 .our-testimonials{
 	position: relative;
 	padding: 100px 0;
-	background-image: url('../images/testimonial-bg-image.png');
+	/* background-image: url('../images/testimonial-bg-image.png');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	background-position: center center;
+	background-position: center center; */
 	overflow: hidden;
 }
 
-.our-testimonials::after{
+/* .our-testimonials::after{
 	content: '';
     position: absolute;
     top: 0;
@@ -2556,9 +2558,9 @@ filter: brightness(1) invert(1);
 	background-position: center center;
     width: 62px;
     height: 205px;
-}
+} */
 
-.our-testimonials::before{
+/* .our-testimonials::before{
 	content: '';
     position: absolute;
     left: -20px;
@@ -2569,7 +2571,7 @@ filter: brightness(1) invert(1);
 	background-position: center center;
     width: 140px;
     height: 145px;
-}
+} */
 
 .our-testimonials .container{
 	position: relative;
@@ -2603,19 +2605,22 @@ filter: brightness(1) invert(1);
 	position: absolute;
 	bottom: 30px;
 	left: 30px;
-	background-color: var(--accent-color);
+	background-color: var(--primary-color);
 	border-radius: 10px;
 	padding: 30px;
 	z-index: 1;
+}
+.testimonials-cta-content h2{
+	color: var(--white-color);
 }
 
 .testimonials-cta-box .satisfy-client-image{
 	border-color: var(--accent-color);
 }
 
-.testimonials-cta-content{
+/* .testimonials-cta-content{
 	margin-top: 30px;
-}
+} */
 
 .testimonials-cta-content h2{
 	font-size: 26px;
@@ -2626,7 +2631,7 @@ filter: brightness(1) invert(1);
 }
 
 .testimonials-cta-content p{
-	color: var(--primary-color);
+	color: var(--white-color);
 	font-weight: 600;
 	margin: 5px 0 0;
 }
@@ -3257,7 +3262,7 @@ filter: brightness(1) invert(1);
 .footer-newsletter-form .newsletter-btn{
     width: 34px;
     height: 34px;
-    background: var(--accent-color);
+    background: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3269,7 +3274,7 @@ filter: brightness(1) invert(1);
 }
 
 .footer-newsletter-form .newsletter-btn:hover{
-	background: var(--white-color);
+	background: var(--accent-color);
 }
 
 .footer-newsletter-form .newsletter-btn img{
@@ -3384,7 +3389,7 @@ filter: brightness(1) invert(1);
 	overflow: hidden;
 }
 
-.our-approach::after{
+/* .our-approach::after{
 	content: '';
     position: absolute;
     top: 0;
@@ -3395,9 +3400,9 @@ filter: brightness(1) invert(1);
 	background-position: center center;
     width: 62px;
     height: 205px;
-}
+} */
 
-.our-approach::before{
+/* .our-approach::before{
 	content: '';
     position: absolute;
     left: -20px;
@@ -3408,7 +3413,7 @@ filter: brightness(1) invert(1);
 	background-position: center center;
     width: 140px;
     height: 145px;
-}
+} */
 
 .our-approach .container{
 	position: relative;
@@ -3426,7 +3431,7 @@ filter: brightness(1) invert(1);
 }
 
 .approach-item-boxes{
-	width: calc(44% - 15px);
+	width: calc(100% - 15px);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -3434,7 +3439,7 @@ filter: brightness(1) invert(1);
 }
 
 .approach-item-box{
-	background-color: var(--white-color);
+	/* background-color: var(--white-color); */
 	border-radius: 10px;
 	padding: 30px;
 }
@@ -5201,7 +5206,7 @@ filter: brightness(1) invert(1);
 	overflow: hidden;
 }
 
-.contact-info-item:before{
+/* .contact-info-item:before{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -5210,10 +5215,10 @@ filter: brightness(1) invert(1);
 	left: 0;
 	width: 100%;
 	height: 0;
-	background: var(--accent-color);
+	background: var(--primary-color);
 	z-index: 0;
 	transition: all 0.4s ease-in-out;
-}
+} */
 
 .contact-info-item:hover::before,
 .contact-info-item.active::before{
@@ -5259,8 +5264,7 @@ filter: brightness(1) invert(1);
 	transition: all 0.4s ease-in-out;
 }
 
-.contact-info-item:hover .contact-info-item-body .icon-box img,
-.contact-info-item.active .contact-info-item-body .icon-box img{
+.contact-info-item-body .icon-box img{
 	filter: brightness(0) invert(0);
 }
 
@@ -5495,7 +5499,7 @@ filter: brightness(1) invert(1);
 	}
 
 	.approach-item-boxes{
-		width: calc(40% - 15px);
+		width: calc(100% - 15px);
 	}
 
 	.approach-item-box{
@@ -5710,17 +5714,17 @@ filter: brightness(1) invert(1);
 		margin-left: 0;
 	}
 
-	.our-testimonials::before{
+	/* .our-testimonials::before{
 		width: 100px;
     	height: 105px;
 		opacity: 40%;
-	}
+	} */
 
-	.our-testimonials::after{
+	/* .our-testimonials::after{
 		width: 34px;
     	height: 110px;
 		opacity: 40%;
-	}
+	} */
 
 	.testimonial-image-box{
 		height: auto;
