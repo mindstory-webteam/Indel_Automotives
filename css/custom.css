@@ -996,7 +996,7 @@ header.main-header .header-sticky.active{
     position: relative;
     height: 50px;
     width: 50px;
-    background-color: var(--accent-color);
+    background-color: var(--white-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1011,7 +1011,7 @@ header.main-header .header-sticky.active{
     bottom: 0;
     right: 0;
     left: 0;
-    background: var(--white-color);
+    background: var(--accent-color);
     border-radius: 50%;
     width: 100%;
     height: 100%;
@@ -1159,7 +1159,7 @@ header.main-header .header-sticky.active{
 	position: relative;
     width: 50px;
     height: 50px;
-    background: var(--accent-color);
+    background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1173,7 +1173,7 @@ header.main-header .header-sticky.active{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     border-radius: 100px;
     transform: scale(0);
     width: 100%;
@@ -2855,7 +2855,8 @@ filter: brightness(1) invert(1);
 }
 
 .faq-accordion .accordion-item .accordion-button:not(.collapsed){
-	background-color: var(--accent-color);
+	background-color: var(--primary-color);
+	color: var(--white-color);
 }
 
 .faq-accordion .accordion-item .accordion-button::after,
@@ -2939,7 +2940,7 @@ filter: brightness(1) invert(1);
     position: relative;
     width: 50px;
     height: 50px;
-    background: var(--accent-color);
+    background: var(--white-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2954,7 +2955,7 @@ filter: brightness(1) invert(1);
     bottom: 0;
     right: 0;
     left: 0;
-    background: var(--white-color);
+    background: var(--accent-color);
     border-radius: 50%;
     width: 100%;
     height: 100%;
