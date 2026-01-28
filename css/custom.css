@@ -791,7 +791,7 @@ header.main-header .header-sticky.active {
 
 .hero {
 	position: relative;
-	background-image: url('../images/hero-bg-image.jpg');
+	background-image: url('../images/bnn.png');
 	padding: 190px 0 80px;
 	margin-top: 20px;
 	overflow: hidden;
@@ -804,8 +804,8 @@ header.main-header .header-sticky.active {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: var(--primary-color);
-	opacity: 80%;
+	background: var(--text-color);
+	opacity: 30%;
 	width: 100%;
 	height: 100%;
 	z-index: 0;
@@ -2989,10 +2989,10 @@ header.main-header .header-sticky.active {
 
 .cta-box {
 	position: relative;
-	/* background-image: url('../images/cta-box-bg-image.jpg');
+	background-image: url('../images/hgdfdg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center; */
+    background-position: center center;
 	padding: 100px 0;
 	overflow: hidden;
 }
@@ -3544,6 +3544,16 @@ header.main-header .header-sticky.active {
 	margin-top: 20px;
 	overflow: hidden;
 }
+.page-header-toyota.page-header {
+	position: relative;
+	background-image: url('../images/0122.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 280px 0 170px;
+	margin-top: 20px;
+	overflow: hidden;
+}
 
 .page-header-life-at.page-header {
 	position: relative;
@@ -3569,7 +3579,7 @@ header.main-header .header-sticky.active {
 
 .page-header {
 	position: relative;
-	background-image: url('../images/page-header-bg.jpg');
+	background-image: url('../images/bnn.png');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -3598,9 +3608,9 @@ header.main-header .header-sticky.active {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-color: var(--primary-color);
+	background-color: var(--text-color);
 	opacity: .6;
-	/* opacity: 80%; */
+	opacity: 40%;
 	z-index: 1;
 }
 
@@ -5325,17 +5335,20 @@ header.main-header .header-sticky.active {
 }
 
 .page-gallery .page-gallery-box .photo-gallery {
-	height: calc(100% - 30px);
+	height: 100%;
+	/* height: calc(100% - 30px); */
 	margin-bottom: 30px;
 }
 
 .page-gallery-box .photo-gallery a {
 	cursor: none;
+	height: 100%;
 }
 
 .page-gallery-box .photo-gallery figure {
 	display: block;
 	border-radius: 10px;
+	height: 100%;
 }
 
 .page-gallery-box .photo-gallery img {
