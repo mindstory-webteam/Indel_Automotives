@@ -1701,7 +1701,7 @@ header.main-header .header-sticky.active {
 	overflow: hidden;
 }
 
-.course-item-image-box{
+.course-item-image-box {
 	margin-top: 10px;
 }
 
@@ -2926,7 +2926,7 @@ header.main-header .header-sticky.active {
 }
 
 .faqs-content {
-	height: 100%;
+	height: auto;
 	align-content: center;
 }
 
@@ -3534,6 +3534,17 @@ header.main-header .header-sticky.active {
 	overflow: hidden;
 }
 
+.page-header-volvo.page-header {
+	position: relative;
+	background-image: url('../images/kerala-volvo.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 280px 0 170px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
 .page-header-life-at.page-header {
 	position: relative;
 	background-image: url('../images/life.jpg');
@@ -3559,6 +3570,17 @@ header.main-header .header-sticky.active {
 .page-header {
 	position: relative;
 	background-image: url('../images/page-header-bg.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 280px 0 170px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.page-header.hero-404 {
+	position: relative;
+	background-image: url('../images/hero-bg-image.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -4965,7 +4987,7 @@ header.main-header .header-sticky.active {
 	position: relative;
 	height: 60px;
 	width: 60px;
-	background-color: var(--accent-color);
+	background-color: var(--primary-color);
 	border-radius: 12px;
 	display: flex;
 	align-items: center;
@@ -4980,7 +5002,7 @@ header.main-header .header-sticky.active {
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background: var(--primary-color);
+	background: var(--accent-color);
 	border-radius: 10px;
 	width: 100%;
 	height: 100%;
@@ -5000,6 +5022,7 @@ header.main-header .header-sticky.active {
 	max-width: 30px;
 	z-index: 1;
 	transition: all 0.4s ease-in-out;
+	filter: brightness(0) invert(1);
 }
 
 .team-contact-item:hover .icon-box img {
@@ -13020,4 +13043,16 @@ header.main-header .header-sticky.active {
 /* custom */
 .accordion-button[aria-expanded="true"]::after {
 	color: var(--white-color) !important;
+}
+
+/* .redirect-button {
+	margin-top: 30px;
+} */
+
+.redirect-button .btn-default::before {
+	display: none;
+}
+
+.redirect-button .btn-default {
+	padding-right: 22px !important;
 }
