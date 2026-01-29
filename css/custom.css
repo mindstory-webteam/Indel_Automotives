@@ -791,7 +791,7 @@ header.main-header .header-sticky.active {
 
 .hero {
 	position: relative;
-	background-image: url('../images/bannerl.png');
+	background-image: url('../images/baner-abstract.png');
 	padding: 190px 0 80px;
 	margin-top: 20px;
 	overflow: hidden;
@@ -3526,8 +3526,8 @@ header.main-header .header-sticky.active {
 
 .page-header {
 	position: relative;
-	background-image: url('../images/bannerl.png');
-	background-position: center center;
+	background-image: url('../images/baner-abstract.png');
+	background-position: center center !important;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 210px 0 170px;
@@ -3555,8 +3555,8 @@ header.main-header .header-sticky.active {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-color: var(--text-color);
-	opacity: .2;
+	/* background-color: var(--text-color);
+	opacity: .2; */
 	/* opacity: 40%; */
 	z-index: 1;
 }
