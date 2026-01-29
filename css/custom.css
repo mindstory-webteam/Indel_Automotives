@@ -68,6 +68,13 @@ body {
 	width: 100%;
 	overflow-x: clip;
 }
+/* Disable text selection */
+body {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Standard */
+}
 
 body {
 	font-family: var(--default-font);
@@ -808,7 +815,7 @@ header.main-header .header-sticky.active {
 	background-repeat: no-repeat !important;
 	background-attachment: fixed !important;
 	background-position: center !important;
-	height: 80vh;
+	height: 85vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
