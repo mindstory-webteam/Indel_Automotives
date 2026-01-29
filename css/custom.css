@@ -421,6 +421,8 @@ a:focus {
 	max-width: 800px;
 	margin: 0 auto;
 	text-align: center;
+	display: flex;
+	align-items: center;
 }
 
 .section-btn {
@@ -461,6 +463,9 @@ a:focus {
 	margin-bottom: 15px;
 }
 
+.section-title h3{
+	width: max-content;
+}
 .section-sub-title h3:before,
 .section-title h3::before {
 	content: '';
@@ -796,14 +801,14 @@ header.main-header .header-sticky.active {
 .hero {
 	position: relative;
 	background-image: url('../images/newbanner.png');
-	padding: 280px 0 120px;
+	/* padding: 280px 0 120px; */
 	margin-top: 20px;
 	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat !important;
 	background-attachment: fixed !important;
 	background-position: center !important;
-	max-height: 80vh;
+	height: 80vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
