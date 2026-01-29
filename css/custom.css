@@ -441,10 +441,10 @@ a:focus {
 }
 
 .section-title {
-	margin-bottom: 40px;
+	/* margin-bottom: 40px; */
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	/* justify-content: center; */
+	/* align-items: center; */
 	flex-direction: column;
 }
 
@@ -796,13 +796,17 @@ header.main-header .header-sticky.active {
 .hero {
 	position: relative;
 	background-image: url('../images/newbanner.png');
-	padding: 190px 0 80px;
+	padding: 280px 0 120px;
 	margin-top: 20px;
 	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat !important;
 	background-attachment: fixed !important;
 	background-position: center !important;
+	max-height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .hero::before {
