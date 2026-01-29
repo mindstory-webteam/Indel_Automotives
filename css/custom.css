@@ -443,7 +443,7 @@ a:focus {
 }
 
 .section-title {
-	/* margin-bottom: 40px; */
+	margin-bottom: 40px;
 	display: flex;
 	/* justify-content: center; */
 	/* align-items: center; */
@@ -800,7 +800,7 @@ header.main-header .header-sticky.active {
 
 .hero {
 	position: relative;
-	background-image: url('../images/newbanner.png');
+	background-image: url('../images/newbanner.webp');
 	/* padding: 280px 0 120px; */
 	margin-top: 20px;
 	overflow: hidden;
