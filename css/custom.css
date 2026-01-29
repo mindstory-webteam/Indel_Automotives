@@ -442,6 +442,10 @@ a:focus {
 
 .section-title {
 	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .section-sub-title h3,
@@ -475,7 +479,7 @@ a:focus {
 }
 
 .section-title h1 {
-	font-size: 60px;
+	font-size: 50px;
 	margin-bottom: 0;
 	cursor: none;
 }
@@ -791,10 +795,14 @@ header.main-header .header-sticky.active {
 
 .hero {
 	position: relative;
-	background-image: url('../images/baner-abstract.png');
+	background-image: url('../images/newbanner.png');
 	padding: 190px 0 80px;
 	margin-top: 20px;
 	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+	background-position: center !important;
 }
 
 .hero::before {
@@ -804,8 +812,8 @@ header.main-header .header-sticky.active {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	/* background: var(--text-color);
-	opacity: 30%; */
+	background: var(--text-color);
+	opacity: 50%;
 	width: 100%;
 	height: 100%;
 	z-index: 0;
@@ -832,7 +840,8 @@ header.main-header .header-sticky.active {
 .hero-content {
 	height: 100%;
 	align-content: center;
-	margin-right: 4.167vw;
+	/* margin-right: 4.167vw; */
+	padding: 0 30px;
 }
 
 .hero-sub-heading {
@@ -972,7 +981,8 @@ header.main-header .header-sticky.active {
 	border-top: 1px solid var(--dark-divider-color);
 	/* margin-top: 60px; */
 	padding-top: 30px;
-	gap: 30px 40px;
+	/* gap: 30px 40px; */
+	justify-content: center;
 }
 
 .hero-footer-item {
@@ -1075,7 +1085,7 @@ header.main-header .header-sticky.active {
 }
 
 .hero-rating-header p i {
-	color: var(--accent-color);
+	color: #fdd663;
 }
 
 .hero-rating-review-content p {
@@ -5789,10 +5799,11 @@ header.main-header .header-sticky.active {
 	.main-footer .row {
 		gap: 15px;
 	}
+
 	.hero-image,
 	.about-us-image-box,
 	.why-choose-us-content,
-	.faqs-content{
+	.faqs-content {
 		margin-top: 10px;
 	}
 }
