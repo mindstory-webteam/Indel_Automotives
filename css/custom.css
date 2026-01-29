@@ -3541,7 +3541,7 @@ header.main-header .header-sticky.active {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 210px 0 170px;
+	padding: 210px 0 170px !important;
 	margin-top: 20px;
 	overflow: hidden;
 }
