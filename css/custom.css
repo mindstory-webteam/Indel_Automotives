@@ -481,7 +481,7 @@ a:focus {
 }
 
 .section-title h2 {
-	font-size: 52px;
+	font-size: 42px;
 	margin-bottom: 0;
 	cursor: none;
 }
@@ -563,7 +563,7 @@ header.main-header .header-sticky.active {
 }
 
 .navbar-brand img {
-	height: 80px;
+	height: 70px;
 }
 
 .main-menu .nav-menu-wrapper {
@@ -2990,9 +2990,9 @@ header.main-header .header-sticky.active {
 .cta-box {
 	position: relative;
 	background-image: url('../images/hgdfdg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 	padding: 100px 0;
 	overflow: hidden;
 }
@@ -3220,7 +3220,7 @@ header.main-header .header-sticky.active {
 
 .footer-logo img {
 	width: 100%;
-	max-width: 179px;
+	max-width: 150px;
 }
 
 .about-footer-content {
@@ -3523,59 +3523,6 @@ header.main-header .header-sticky.active {
 	overflow: hidden;
 }
 
-.page-header-about-us.page-header {
-	position: relative;
-	background-image: url('../images/abou.avif');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 280px 0 170px;
-	margin-top: 20px;
-	overflow: hidden;
-}
-
-.page-header-volvo.page-header {
-	position: relative;
-	background-image: url('../images/kerala-volvo.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 280px 0 170px;
-	margin-top: 20px;
-	overflow: hidden;
-}
-.page-header-toyota.page-header {
-	position: relative;
-	background-image: url('../images/0122.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 280px 0 170px;
-	margin-top: 20px;
-	overflow: hidden;
-}
-
-.page-header-life-at.page-header {
-	position: relative;
-	background-image: url('../images/life.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 280px 0 170px;
-	margin-top: 20px;
-	overflow: hidden;
-}
-
-.page-header-contact-us.page-header {
-	position: relative;
-	background-image: url('../images/page-header-bg.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 280px 0 170px;
-	margin-top: 20px;
-	overflow: hidden;
-}
 
 .page-header {
 	position: relative;
@@ -3583,7 +3530,7 @@ header.main-header .header-sticky.active {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 280px 0 170px;
+	padding: 210px 0 170px;
 	margin-top: 20px;
 	overflow: hidden;
 }
@@ -3594,7 +3541,7 @@ header.main-header .header-sticky.active {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 280px 0 170px;
+	padding: 210px 0 170px;
 	margin-top: 20px;
 	overflow: hidden;
 }
@@ -6300,7 +6247,7 @@ header.main-header .header-sticky.active {
 	}
 
 	.section-title h2 {
-		font-size: 38px;
+		font-size: 32px;
 	}
 
 	.section-title p {
