@@ -13102,11 +13102,12 @@ header.main-header .header-sticky.active {
 	transition: all 0.3s ease;
 	height: 100%;
 	border: 2px solid transparent;
+	cursor: pointer;
 }
 
 .service-item-box:hover {
-	background: #fff;
-	box-shadow: 0 10px 40px rgba(230, 57, 70, 0.15);
+	/* background: #fff; */
+	/* box-shadow: 0 10px 40px rgba(230, 57, 70, 0.15); */
 	transform: translateY(-10px);
 }
 
@@ -13180,10 +13181,6 @@ header.main-header .header-sticky.active {
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
 }
 
-.feature-box-item:hover .feature-icon {
-	background: #1a3664;
-	box-shadow: 0 8px 30px rgba(26, 54, 100, 0.3);
-}
 
 .custom-ctc-box-cc {
 	row-gap: 30px;
