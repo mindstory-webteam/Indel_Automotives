@@ -3600,7 +3600,7 @@ header.main-header .header-sticky.active {
 	line-height: 1.1em;
 	color: var(--white-color);
 	margin-bottom: 15px;
-	cursor: none;
+	/* cursor: none; */
 }
 
 .page-header-box ol {
