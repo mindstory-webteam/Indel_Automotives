@@ -3552,7 +3552,7 @@ header.main-header .header-sticky.active {
 
 .page-header {
 	position: relative;
-	background-image: url('../images/baner-abstract.png');
+	background-image: url('../images/bar/bar-banner.webp');
 	background-position: center center !important;
 	background-repeat: no-repeat;
 	background-size: cover;
