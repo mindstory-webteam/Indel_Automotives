@@ -807,9 +807,24 @@ header.main-header .header-sticky.active {
 /***         04. Hero css	      ***/
 /************************************/
 
-.hero {
+.hero.hero-1 {
 	position: relative;
 	background-image: url('../images/newbanner.webp');
+	padding: 240px 0 120px;
+	margin-top: 20px;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+	background-position: center !important;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hero.hero-2 {
+	position: relative;
+	background-image: url('../images/mainbanner-2.webp');
 	padding: 240px 0 120px;
 	margin-top: 20px;
 	overflow: hidden;
