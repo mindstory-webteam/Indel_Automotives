@@ -40,6 +40,24 @@
 			return false;
 		});
 	}
+	
+	/* Home banner Slider JS */
+	if ($('.home-banner-slider').length) {
+		const testimonial_slider = new Swiper('.home-banner-slider .swiper', {
+			slidesPerView : 1,
+			speed: 1000,
+			spaceBetween: 30,
+			dot: true,
+			loop: true,
+			autoplay: {
+				delay: 5000,
+			},
+		    pagination: {
+                el: ".swiper-pagination",
+            },
+		});
+	}
+
 
 	/* testimonial Slider JS */
 	if ($('.testimonial-slider').length) {

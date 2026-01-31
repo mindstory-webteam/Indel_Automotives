@@ -1168,7 +1168,8 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .about-us {
-	padding: 100px 0;
+	padding: 80px 0;
+	/* padding: 100px 0; */
 }
 
 .about-us-item {
@@ -2758,7 +2759,11 @@ header.main-header .header-sticky.active {
 }
 
 .testimonial-slider .swiper-wrapper {
-	cursor: none;
+	cursor: pointer;
+}
+
+.home-banner-slider .swiper-wrapper {
+	cursor: pointer;
 }
 
 .testimonial-item {
