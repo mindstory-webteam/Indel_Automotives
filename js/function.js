@@ -403,9 +403,9 @@
 
 	function submitMSG(valid, msg){
 		if(valid){
-			var msgClasses = "h4 text-success";
+			var msgClasses = "h5 text-success";
 		} else {
-			var msgClasses = "h4 text-danger";
+			var msgClasses = "h5 text-danger";
 		}
 		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 	}
@@ -443,9 +443,9 @@
 
 	function appointmentsubmitMSG(valid, msg){
 		if(valid){
-			var msgClasses = "h3 text-success";
+			var msgClasses = "h5 text-success";
 		} else {
-			var msgClasses = "h3 text-danger";
+			var msgClasses = "h5 text-danger";
 		}
 		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 	}
