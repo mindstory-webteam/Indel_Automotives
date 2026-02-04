@@ -822,6 +822,7 @@ header.main-header .header-sticky.active {
 	align-items: center;
 	justify-content: center;
 }
+
 .hero.hero-2 {
 	position: relative;
 	background-image: url('../images/mainbanner-2.webp');
@@ -5329,7 +5330,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .page-gallery {
-	padding: 100px 0 70px;
+	padding: 60px 0 70px;
 }
 
 .page-gallery .page-gallery-box .photo-gallery {
@@ -13303,9 +13304,69 @@ header.main-header .header-sticky.active {
 	}
 }
 
-.team-member-about .section-title{
+.team-member-about .section-title {
 	margin-bottom: 30px;
 }
-.page-team-single .row{
+
+.page-team-single .row {
 	row-gap: 20px;
+}
+
+.gallery-tabs {
+	display: flex;
+	gap: 10px;
+	overflow-x: auto;
+	/* padding-bottom: 15px; */
+	scroll-behavior: smooth;
+	padding: 10px 0 4px 0;
+	margin-bottom: 20px;
+	scrollbar-width: thin;
+}
+
+.gallery-tabs::-webkit-scrollbar {
+	display: none;
+}
+
+.tab-btn {
+	border: none;
+	padding: 10px 22px;
+	border-radius: 40px;
+	background: #eef2f7;
+	color: #17479E;
+	font-weight: 600;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.tab-btn.active {
+	background: #17479E;
+	color: #fff;
+}
+
+/* TAB CONTENT */
+
+.tab-pane {
+	display: none;
+}
+
+.tab-pane.active {
+	display: block;
+}
+
+/* MOBILE */
+@media (max-width:767px) {
+
+	.gallery-tabs {
+		flex-wrap: nowrap;
+	}
+
+}
+.tab-btn{
+transition:.3s;
+}
+
+.tab-btn:hover{
+background:#17479E;
+color:#fff;
+transform:translateY(-3px);
 }
