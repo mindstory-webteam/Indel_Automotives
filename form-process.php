@@ -1,77 +1,77 @@
 <?php
 
-	$errorMSG = "";
+$errorMSG = "";
 
-	// FIRSTNAME
-	if (empty($_POST["fname"])) {
-		$errorMSG = "First Name is required. ";
-	} else {
-		$fname = $_POST["fname"];
-	}
+// FIRST NAME
+if (empty(trim($_POST["fname"]))) {
+    $errorMSG .= "First Name is required. ";
+} else {
+    $fname = trim($_POST["fname"]);
+}
 
-	// LASTNAME
-	if (empty($_POST["lname"])) {
-		$errorMSG = "Last Name is required. ";
-	} else {
-		$lname = $_POST["lname"];
-	}
+// LAST NAME
+if (empty(trim($_POST["lname"]))) {
+    $errorMSG .= "Last Name is required. ";
+} else {
+    $lname = trim($_POST["lname"]);
+}
 
-	// EMAIL
-	if (empty($_POST["email"])) {
-		$errorMSG .= "Email is required. ";
-	} else {
-		$email = $_POST["email"];
-	}
+// EMAIL
+if (empty(trim($_POST["email"]))) {
+    $errorMSG .= "Email is required. ";
+} elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+    $errorMSG .= "Enter a valid email address. ";
+} else {
+    $email = trim($_POST["email"]);
+}
 
-	// PHONE
-	if (empty($_POST["phone"])) {
-		$errorMSG .= "Phone is required. ";
-	} else {
-		$phone = $_POST["phone"];
-	}
+// PHONE
+if (empty(trim($_POST["phone"]))) {
+    $errorMSG .= "Phone is required. ";
+} else {
+    $phone = trim($_POST["phone"]);
+}
 
-	// MESSAGE
-	if (empty($_POST["message"])) {
-		$errorMSG .= "Message is required. ";
-	} else {
-		$message = $_POST["message"];
-	}
+// MESSAGE
+if (empty(trim($_POST["message"]))) {
+    $errorMSG .= "Message is required. ";
+} else {
+    $message = trim($_POST["message"]);
+}
 
-	$subject = 'Contact Inquiry from Website';
 
-	//$EmailTo = "info@yourdomain.com"; // Replace with your email.
-    $EmailTo = "janavalsan@mindstory.in";
-    
-	// prepare email body text
-	$Body = "";
-	$Body .= "fname: ";
-	$Body .= $fname;
-	$Body .= "\n";
-	$Body .= "lname: ";
-	$Body .= $lname;
-	$Body .= "\n";	
-	$Body .= "Email: ";
-	$Body .= $email;
-	$Body .= "\n";
-	$Body .= "Phone: ";
-	$Body .= $phone;
-	$Body .= "\n";
-	$Body .= "Message: ";
-	$Body .= $message;
-	$Body .= "\n";
+// SEND MAIL ONLY IF NO ERRORS
+if ($errorMSG == "") {
 
-	// send email
-	$success = @mail($EmailTo, $subject, $Body, "From:".$email);
+    $EmailTo = "janavalsan@mindstory.in"; // Change if needed
+    $subject = "New Contact Inquiry from Website";
 
-	// redirect to success page
-	if ($success && $errorMSG == ""){
-	   echo "success";
-	}else{
-		if($errorMSG == ""){
-			echo "Something went wrong :(";
-		} else {
-			echo $errorMSG;
-		}
-	}
+    // PROFESSIONAL EMAIL BODY
+    $Body  = "New Contact Inquiry\n";
+    $Body .= "---------------------------\n\n";
+
+    $Body .= "First Name : $fname\n";
+    $Body .= "Last Name  : $lname\n";
+    $Body .= "Email      : $email\n";
+    $Body .= "Phone      : $phone\n\n";
+
+    $Body .= "Message:\n$message\n";
+
+
+    // BETTER HEADERS (PREVENT SPAM)
+    $headers = "From: Website Contact <no-reply@yourdomain.com>\r\n"; // change domain
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+
+    if(mail($EmailTo, $subject, $Body, $headers)){
+        echo "success";
+    } else {
+        echo "Something went wrong. Please try again.";
+    }
+
+} else {
+    echo $errorMSG;
+}
 
 ?>
