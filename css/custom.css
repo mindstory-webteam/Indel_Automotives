@@ -5512,10 +5512,10 @@ header.main-header .header-sticky.active {
 	transition: all 0.4s ease-in-out;
 }
 
-.contact-info-item:hover .contact-info-item-header p,
+/* .contact-info-item:hover .contact-info-item-header p,
 .contact-info-item.active .contact-info-item-header p {
 	color: var(--primary-color);
-}
+} */
 
 .contact-info-item-body {
 	position: relative;
