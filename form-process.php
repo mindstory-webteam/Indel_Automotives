@@ -43,7 +43,7 @@ if (empty(trim($_POST["message"]))) {
 // SEND MAIL ONLY IF NO ERRORS
 if ($errorMSG == "") {
 
-    $EmailTo = "janavalsan@mindstory.in"; // Change if needed
+    $EmailTo = "test@yourdomain.com"; // Change if needed
     $subject = "New Contact Inquiry from Website";
 
     // PROFESSIONAL EMAIL BODY
