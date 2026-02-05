@@ -839,7 +839,7 @@ header.main-header .header-sticky.active {
 	justify-content: center;
 }
 
-.hero::before {
+.hero-2::before {
 	content: '';
 	position: absolute;
 	top: 0;
