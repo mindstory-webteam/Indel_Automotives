@@ -6340,6 +6340,11 @@ header.main-header .header-sticky.active {
 		padding: 140px 0 0;
 		margin-top: 0;
 	}
+	.hero.hero-1,
+	.hero.hero-2 {
+		padding: 140px 0 0;
+		margin-top: 0;
+	}
 
 	/* .hero::after{
 		bottom: -40px;
