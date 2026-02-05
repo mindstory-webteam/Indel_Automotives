@@ -4981,6 +4981,7 @@ header.main-header .header-sticky.active {
 	background-color: var(--secondary-color);
 	border-radius: 10px;
 	padding: 60px;
+	height: 100%;
 }
 
 /* .team-contact-list {
@@ -5468,9 +5469,15 @@ header.main-header .header-sticky.active {
 	padding: 0 0 50px 0;
 }
 
-.contact-info-list {
+.page-contact-us .contact-info-list {
 	display: flex;
-	/* flex-wrap: wrap; */
+	flex-wrap: nowrap;
+	gap: 30px;
+	/* flex-direction: column; */
+}
+.page-contact-us{
+	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
 	/* flex-direction: column; */
 }
@@ -6970,6 +6977,9 @@ header.main-header .header-sticky.active {
 }
 
 @media only screen and (max-width: 767px) {
+	.page-contact-us .contact-info-list{
+		flex-wrap: wrap;
+	}
 	.contact-info-list {
 		flex-wrap: wrap;
 	}
