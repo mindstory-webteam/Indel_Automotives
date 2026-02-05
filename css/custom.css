@@ -5475,7 +5475,10 @@ header.main-header .header-sticky.active {
 	gap: 30px;
 	/* flex-direction: column; */
 }
-.page-contact-us{
+.team-single-content{
+	height: 100%;
+}
+.contact-info-list{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
