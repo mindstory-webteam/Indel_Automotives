@@ -49,7 +49,7 @@ if (empty($_POST["message"])) {
 if ($errorMSG == "") {
 
     $EmailTo = "janavalsan@mindstory.in";
-    $subject = "New Website Inquiry - Indel Automotives";
+    $subject = "New contact inquiry - Indel Automotives Website";
 
     // EMAIL BODY
     $Body  = "New contact inquiry from Indel Automotives Website\n";
