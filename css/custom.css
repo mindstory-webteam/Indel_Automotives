@@ -13439,3 +13439,6 @@ header.main-header .header-sticky.active {
 	color: #fff;
 	transform: translateY(-3px);
 }
+.g-recaptcha{
+	margin-bottom: 10px;
+}
