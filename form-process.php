@@ -49,10 +49,10 @@ if (empty($_POST["message"])) {
 if ($errorMSG == "") {
 
     $EmailTo = "janavalsan@mindstory.in";
-    $subject = "New Website Inquiry - Indel Automotive";
+    $subject = "New Website Inquiry - Indel Automotives";
 
     // EMAIL BODY
-    $Body  = "New contact inquiry from Indel Automotive Website\n";
+    $Body  = "New contact inquiry from Indel Automotives Website\n";
     $Body .= "---------------------------------------\n\n";
 
     $Body .= "First Name : $fname\n";
@@ -64,7 +64,7 @@ if ($errorMSG == "") {
 
 
     // ✅ PROFESSIONAL HEADERS
-    $headers  = "From: Indel Automotive <noreply@indelauto.com>\r\n";
+    $headers  = "From: Indel Automotives <noreply@indelauto.com>\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
