@@ -825,7 +825,7 @@ header.main-header .header-sticky.active {
 	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat !important;
-	background-attachment: fixed !important;
+	background-attachment: fixed !important;               
 	background-position: center !important;
 	height: 80vh;
 	display: flex;
