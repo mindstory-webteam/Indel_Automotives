@@ -44,10 +44,10 @@ if (empty(trim($_POST["message"]))) {
 if ($errorMSG == "") {
 
     $EmailTo = "test@yourdomain.com"; // Change if needed
-    $subject = "New Contact Inquiry from Website";
+    $subject = "New contact inquiry from Indel Automotives Website ";
 
     // PROFESSIONAL EMAIL BODY
-    $Body  = "New Contact Inquiry\n";
+    $Body  = "New contact inquiry from Indel Automotives Website";
     $Body .= "---------------------------\n\n";
 
     $Body .= "First Name : $fname\n";

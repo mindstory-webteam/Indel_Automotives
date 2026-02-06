@@ -46,7 +46,7 @@
 
 	$subject ='Book Appointment from site';
 
-	$EmailTo = "janavalsan@mindstory.in"; // Replace with your email.
+	$EmailTo = "test@yourdomain.com"; // Replace with your email.
 
 	// prepare email body text
 	$Body = "";
