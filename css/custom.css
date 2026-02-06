@@ -803,9 +803,14 @@ header.main-header .header-sticky.active {
 	color: var(--white-color);
 }
 
-#newsletterMsg{
-    font-size:14px;
-    font-weight:500;
+#newsletterMsg {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.text-success {
+	font-size: 16px !important;
+	margin-top: 10px !important;
 }
 
 /************************************/
@@ -857,6 +862,7 @@ header.main-header .header-sticky.active {
 	height: 100%;
 	z-index: 0;
 }
+
 /* .hero-2::before {
 	content: '';
 	position: absolute;
@@ -1318,6 +1324,7 @@ header.main-header .header-sticky.active {
 	flex-direction: column;
 	gap: 30px;
 }
+
 .map-contact-form-box .about-info-item-list {
 	width: calc(40% - 15px);
 	height: auto;
@@ -5493,10 +5500,12 @@ header.main-header .header-sticky.active {
 	gap: 30px;
 	/* flex-direction: column; */
 }
-.team-single-content{
+
+.team-single-content {
 	height: 100%;
 }
-.contact-info-list{
+
+.contact-info-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
@@ -5892,7 +5901,7 @@ header.main-header .header-sticky.active {
 }
 
 @media only screen and (max-width: 1024px) {
-	.map-contact-form-box .about-info-item-list{
+	.map-contact-form-box .about-info-item-list {
 		width: 100%;
 	}
 
@@ -6368,6 +6377,7 @@ header.main-header .header-sticky.active {
 		padding: 140px 0 0;
 		margin-top: 0;
 	}
+
 	.hero.hero-1,
 	.hero.hero-2 {
 		padding: 140px 0 0;
@@ -6998,12 +7008,14 @@ header.main-header .header-sticky.active {
 }
 
 @media only screen and (max-width: 767px) {
-	.page-contact-us .contact-info-list{
+	.page-contact-us .contact-info-list {
 		flex-wrap: wrap;
 	}
+
 	.contact-info-list {
 		flex-wrap: wrap;
 	}
+
 	.hero {
 		height: 60vh;
 	}
@@ -7086,6 +7098,7 @@ header.main-header .header-sticky.active {
 		height: auto;
 		width: 100%;
 	}
+
 	.map-contact-form-box .about-info-item-list {
 		height: auto;
 		width: 100%;
@@ -13416,12 +13429,13 @@ header.main-header .header-sticky.active {
 	}
 
 }
-.tab-btn{
-transition:.3s;
+
+.tab-btn {
+	transition: .3s;
 }
 
-.tab-btn:hover{
-background:#17479E;
-color:#fff;
-transform:translateY(-3px);
+.tab-btn:hover {
+	background: #17479E;
+	color: #fff;
+	transform: translateY(-3px);
 }
