@@ -53,7 +53,7 @@ if ($errorMSG == "") {
 
     // EMAIL BODY
     $Body  = "New contact inquiry from Indel Automotives Website\n";
-    $Body .= "---------------------------------------\n\n";
+    $Body .= "--------------------------------------------------\n";
 
     $Body .= "First Name : $fname\n";
     $Body .= "Last Name  : $lname\n";
