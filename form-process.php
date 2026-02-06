@@ -7,11 +7,6 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 
 $errorMSG = "";
 
-//  HONEYPOT (Hidden field to trap bots)
-if(!empty($_POST['website'])) {
-    die("Spam detected.");
-}
-
 // SANITIZE FUNCTION
 function clean_input($data) {
     return htmlspecialchars(strip_tags(trim($data)));
@@ -50,17 +45,17 @@ if ($message == "") {
 }
 
 
-// ONLY CONTINUE IF NO ERRORS
+//  ONLY CONTINUE IF NO ERRORS
 if ($errorMSG == "") {
 
-    //  GOOGLE RECAPTCHA
-    $secretKey = "6Leff2IsAAAAALKcRL0RCmjYpbAJv7v15h1gs-5p";
+    // GOOGLE RECAPTCHA
+    $secretKey = "6Leff2IsAAAAALKcRL0RCmjYpbAJv7v15h1gs-5p ";
 
     if(empty($_POST['g-recaptcha-response'])){
         die("Please complete the CAPTCHA.");
     }
 
-    //  Use cURL (Better than file_get_contents)
+    //  cURL verification
     $ch = curl_init();
 
     curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
