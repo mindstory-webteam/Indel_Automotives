@@ -808,7 +808,8 @@ header.main-header .header-sticky.active {
 	font-weight: 500;
 }
 
-.text-success {
+.text-success,
+.text-danger {
 	font-size: 16px !important;
 	margin-top: 10px !important;
 }
