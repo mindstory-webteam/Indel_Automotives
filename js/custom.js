@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function(){
             let msg = document.getElementById("newsletterMsg");
 
             if(data.trim() === "success"){
-                msg.innerHTML = "<span style='color:lightgreen;'>✅ Subscribed successfully!</span>";
+                msg.innerHTML = "<span style='color:lightgreen;'>Subscribed successfully!</span>";
                 document.getElementById("newslettersForm").reset();
             }else{
-                msg.innerHTML = "<span style='color:red;'>⚠️ Something went wrong.</span>";
+                msg.innerHTML = "<span style='color:red;'>Something went wrong.</span>";
             }
 
         })
