@@ -2,53 +2,58 @@
 
 $errorMSG = "";
 
+// SANITIZE FUNCTION
+function clean_input($data) {
+    return htmlspecialchars(strip_tags(trim($data)));
+}
+
 // FIRST NAME
-if (empty(trim($_POST["fname"]))) {
+if (empty($_POST["fname"])) {
     $errorMSG .= "First Name is required. ";
 } else {
-    $fname = trim($_POST["fname"]);
+    $fname = clean_input($_POST["fname"]);
 }
 
 // LAST NAME
-if (empty(trim($_POST["lname"]))) {
+if (empty($_POST["lname"])) {
     $errorMSG .= "Last Name is required. ";
 } else {
-    $lname = trim($_POST["lname"]);
+    $lname = clean_input($_POST["lname"]);
 }
 
 // EMAIL
-if (empty(trim($_POST["email"]))) {
+if (empty($_POST["email"])) {
     $errorMSG .= "Email is required. ";
 } elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
     $errorMSG .= "Enter a valid email address. ";
 } else {
-    $email = trim($_POST["email"]);
+    $email = clean_input($_POST["email"]);
 }
 
 // PHONE
-if (empty(trim($_POST["phone"]))) {
+if (empty($_POST["phone"])) {
     $errorMSG .= "Phone is required. ";
 } else {
-    $phone = trim($_POST["phone"]);
+    $phone = clean_input($_POST["phone"]);
 }
 
 // MESSAGE
-if (empty(trim($_POST["message"]))) {
+if (empty($_POST["message"])) {
     $errorMSG .= "Message is required. ";
 } else {
-    $message = trim($_POST["message"]);
+    $message = clean_input($_POST["message"]);
 }
 
 
 // SEND MAIL ONLY IF NO ERRORS
 if ($errorMSG == "") {
 
-    $EmailTo = "test@yourdomain.com"; // Change if needed
-    $subject = "New contact inquiry from Indel Automotives Website ";
+    $EmailTo = "info@indelauto.com";
+    $subject = "New Website Inquiry - Indel Automotive";
 
-    // PROFESSIONAL EMAIL BODY
-    $Body  = "New contact inquiry from Indel Automotives Website";
-    $Body .= "---------------------------\n\n";
+    // EMAIL BODY
+    $Body  = "New contact inquiry from Indel Automotive Website\n";
+    $Body .= "---------------------------------------\n\n";
 
     $Body .= "First Name : $fname\n";
     $Body .= "Last Name  : $lname\n";
@@ -58,9 +63,10 @@ if ($errorMSG == "") {
     $Body .= "Message:\n$message\n";
 
 
-    // BETTER HEADERS (PREVENT SPAM)
-    $headers = "From: Website Contact <no-reply@yourdomain.com>\r\n"; // change domain
+    // ✅ PROFESSIONAL HEADERS
+    $headers  = "From: Indel Automotive <noreply@indelauto.com>\r\n";
     $headers .= "Reply-To: $email\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 
