@@ -48,7 +48,7 @@ if (empty($_POST["message"])) {
 // SEND MAIL ONLY IF NO ERRORS
 if ($errorMSG == "") {
 
-    $EmailTo = "info@indelauto.com";
+    $EmailTo = "janavalsan@mindstory.in";
     $subject = "New Website Inquiry - Indel Automotive";
 
     // EMAIL BODY
