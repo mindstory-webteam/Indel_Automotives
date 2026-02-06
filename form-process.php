@@ -1,6 +1,16 @@
 <?php
 
+//  BLOCK DIRECT ACCESS
+if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+    die("Access denied.");
+}
+
 $errorMSG = "";
+
+//  HONEYPOT (Hidden field to trap bots)
+if(!empty($_POST['website'])) {
+    die("Spam detected.");
+}
 
 // SANITIZE FUNCTION
 function clean_input($data) {
@@ -8,52 +18,75 @@ function clean_input($data) {
 }
 
 // FIRST NAME
-if (empty($_POST["fname"])) {
+$fname = clean_input($_POST["fname"] ?? '');
+if ($fname == "") {
     $errorMSG .= "First Name is required. ";
-} else {
-    $fname = clean_input($_POST["fname"]);
 }
 
 // LAST NAME
-if (empty($_POST["lname"])) {
+$lname = clean_input($_POST["lname"] ?? '');
+if ($lname == "") {
     $errorMSG .= "Last Name is required. ";
-} else {
-    $lname = clean_input($_POST["lname"]);
 }
 
 // EMAIL
-if (empty($_POST["email"])) {
+$email = clean_input($_POST["email"] ?? '');
+if ($email == "") {
     $errorMSG .= "Email is required. ";
-} elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $errorMSG .= "Enter a valid email address. ";
-} else {
-    $email = clean_input($_POST["email"]);
 }
 
 // PHONE
-if (empty($_POST["phone"])) {
+$phone = clean_input($_POST["phone"] ?? '');
+if ($phone == "") {
     $errorMSG .= "Phone is required. ";
-} else {
-    $phone = clean_input($_POST["phone"]);
 }
 
 // MESSAGE
-if (empty($_POST["message"])) {
+$message = clean_input($_POST["message"] ?? '');
+if ($message == "") {
     $errorMSG .= "Message is required. ";
-} else {
-    $message = clean_input($_POST["message"]);
 }
 
 
-// SEND MAIL ONLY IF NO ERRORS
+// ONLY CONTINUE IF NO ERRORS
 if ($errorMSG == "") {
 
+    //  GOOGLE RECAPTCHA
+    $secretKey = "6Leff2IsAAAAALKcRL0RCmjYpbAJv7v15h1gs-5p";
+
+    if(empty($_POST['g-recaptcha-response'])){
+        die("Please complete the CAPTCHA.");
+    }
+
+    //  Use cURL (Better than file_get_contents)
+    $ch = curl_init();
+
+    curl_setopt($ch, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
+        'secret' => $secretKey,
+        'response' => $_POST['g-recaptcha-response']
+    ]));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    $response = curl_exec($ch);
+    curl_close($ch);
+
+    $responseData = json_decode($response);
+
+    if(!$responseData->success){
+        die("Captcha verification failed. Try again.");
+    }
+
+
+    //  SEND EMAIL
     $EmailTo = "janavalsan@mindstory.in";
     $subject = "New contact inquiry - Indel Automotives Website";
 
-    // EMAIL BODY
     $Body  = "New contact inquiry from Indel Automotives Website\n";
-    $Body .= "--------------------------------------------------\n";
+    $Body .= "--------------------------------------------------\n\n";
 
     $Body .= "First Name : $fname\n";
     $Body .= "Last Name  : $lname\n";
@@ -63,7 +96,7 @@ if ($errorMSG == "") {
     $Body .= "Message:\n$message\n";
 
 
-    // ✅ PROFESSIONAL HEADERS
+    //  PROFESSIONAL HEADERS
     $headers  = "From: Indel Automotives <noreply@indelauto.com>\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
