@@ -77,7 +77,7 @@ if ($errorMSG == "") {
 
 
     //  SEND EMAIL
-    $EmailTo = "janavalsan@mindstory.in";
+    $EmailTo = "info@indelauto.com";
     $subject = "New contact inquiry - Indel Automotives Website";
 
     $Body  = "New contact inquiry from Indel Automotives Website\n";

@@ -9,7 +9,7 @@ if(isset($_POST['mail'])){
         exit;
     }
 
-    $to = "janavalsan@mindstory.in";
+    $to = "info@indelauto.com";
     $subject = "New Newsletter Subscriber from Indel Automotives Website";
 
     $message = "New subscriber:\n\nEmail: $email";
