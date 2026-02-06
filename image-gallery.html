@@ -290,7 +290,7 @@
                 </div>
               </div>
 
-               <div class="col-lg-4 col-6">
+              <div class="col-lg-4 col-6">
                 <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
                   <a href="images/yamaha-1.webp">
                     <figure class="image-anime">
@@ -299,7 +299,7 @@
                   </a>
                 </div>
               </div>
-               <div class="col-lg-4 col-6">
+              <div class="col-lg-4 col-6">
                 <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
                   <a href="images/yamaha-2.webp">
                     <figure class="image-anime">
@@ -308,7 +308,6 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -412,8 +411,6 @@
                   </a>
                 </div>
               </div>
-
-
             </div>
           </div>
 
@@ -533,11 +530,8 @@
           <!-- ================= OTHER ================= -->
 
           <div class="tab-pane" id="motory">
-            <div class="row gallery-items page-gallery-box">
-            </div>
+            <div class="row gallery-items page-gallery-box"></div>
           </div>
-
-
         </div>
       </div>
     </div>
@@ -558,17 +552,21 @@
               <!-- About Footer Title End -->
 
               <!-- Footer Social Link Start -->
-               <div class="footer-social-links">
+              <div class="footer-social-links">
                 <h3>Follow Us On Social:</h3>
                 <ul>
                   <li>
-                    <a href="https://youtube.com/@indel_automotives_official?si=EWmVJ2rfGyUDTeaD">
+                    <a
+                      href="https://youtube.com/@indel_automotives_official?si=EWmVJ2rfGyUDTeaD"
+                    >
                       <i class="fa-brands fa-youtube"></i>
                     </a>
                   </li>
 
                   <li>
-                    <a href="https://www.instagram.com/indel_automotives_official">
+                    <a
+                      href="https://www.instagram.com/indel_automotives_official"
+                    >
                       <i class="fa-brands fa-instagram"></i>
                     </a>
                   </li>
@@ -635,7 +633,7 @@
                   tips, service updates, and exclusive offers—delivered straight
                   to your inbox.
                 </p>
-                <form id="newslettersForm" action="newsletter.php" method="POST">
+                <form id="newslettersForm" method="POST">
                   <div class="form-group">
                     <input
                       type="email"
@@ -645,10 +643,14 @@
                       placeholder="Enter Your Email Address"
                       required
                     />
+
                     <button type="submit" class="newsletter-btn">
                       <img src="images/arrow-primary.svg" alt="" />
                     </button>
                   </div>
+
+                  <!-- SUCCESS MESSAGE -->
+                  <div id="newsletterMsg" style="margin-top: 10px"></div>
                 </form>
               </div>
               <!-- Footer Links End -->
@@ -691,6 +693,7 @@
       });
     </script>
 
+    <script src="js/custom.js"></script>
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap js file -->

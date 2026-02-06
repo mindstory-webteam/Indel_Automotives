@@ -803,6 +803,11 @@ header.main-header .header-sticky.active {
 	color: var(--white-color);
 }
 
+#newsletterMsg{
+    font-size:14px;
+    font-weight:500;
+}
+
 /************************************/
 /***         04. Hero css	      ***/
 /************************************/
