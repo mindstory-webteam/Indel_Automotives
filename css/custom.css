@@ -4144,9 +4144,11 @@ header.main-header .header-sticky.active {
 	transition: all 0.6s ease-in-out;
 	height: 100%;
 }
-.team-item-image{
+
+.team-item-image {
 	height: 100%;
 }
+
 .team-item:hover .team-item-image figure img {
 	transform: scale(1.06);
 }
@@ -6791,6 +6793,9 @@ header.main-header .header-sticky.active {
 	/* .team-item:hover .team-item-body {
 		bottom: 20px;
 	} */
+	/* .team-item{
+		height: auto;
+	 } */
 
 	.team-item-content p {
 		margin-top: 5px;
@@ -7013,6 +7018,10 @@ header.main-header .header-sticky.active {
 }
 
 @media only screen and (max-width: 767px) {
+	/* .team-item {
+		height: auto;
+	} */
+
 	.page-contact-us .contact-info-list {
 		flex-wrap: wrap;
 	}
@@ -7595,7 +7604,11 @@ header.main-header .header-sticky.active {
 		margin-top: 10px;
 	}
 }
-
+@media only screen and (min-width: 400px) and (max-width: 767px){		
+	.team-item {
+		height: auto;
+	}
+}
 /************************************/
 /***   32. Home - Version 2 css   ***/
 /************************************/
