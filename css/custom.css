@@ -13442,11 +13442,6 @@ header.main-header .header-sticky.active {
 	transform: translateY(-3px);
 }
 
-.team-section {
-	padding: 80px 0;
-	background: #f8f9fa;
-}
-
 .team-card {
 	position: relative;
 	border-radius: 20px;
