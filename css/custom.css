@@ -13504,20 +13504,10 @@ header.main-header .header-sticky.active {
 	padding-bottom: 60px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 991px) {
-	.team-card {
-		height: 400px;
-	}
-}
 
 @media (max-width: 767px) {
 	.ourteam-section {
 		padding-bottom: 30px;
-	}
-
-	.team-card {
-		height: 450px;
 	}
 
 	.team-name {
@@ -13532,9 +13522,5 @@ header.main-header .header-sticky.active {
 @media (max-width: 576px) {
 	.team-section {
 		padding: 50px 0;
-	}
-
-	.team-card {
-		height: 400px;
 	}
 }
