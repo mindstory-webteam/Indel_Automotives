@@ -773,7 +773,7 @@ header.main-header .header-sticky.active {
 .slicknav_nav a:focus,
 .slicknav_nav .slicknav_row:hover {
 	background-color: transparent;
-	color: var(--white-color);
+	/* color: var(--white-color); */
 }
 
 .slicknav_menu ul ul li a {
